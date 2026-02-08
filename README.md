@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# AdGen-AI-AI-Powered-Viral-Video-Generator
-=======
+
 # 🚀 AdGen AI - The Next Gen Viral Video Generator
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Version](https://img.shields.io/badge/version-1.0.0-green.svg) ![React](https://img.shields.io/badge/React-19-blue) ![Node](https://img.shields.io/badge/Node-20-green)
@@ -151,4 +149,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </p>
->>>>>>> 5da4ba6 (Initial commit: AdGen AI project with God Level UI and Pro README)
+
