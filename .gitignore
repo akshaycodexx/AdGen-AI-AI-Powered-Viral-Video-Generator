@@ -6,5 +6,4 @@ build
 coverage
 .vscode
 .idea
-screenshots
 .puppeteer_cache

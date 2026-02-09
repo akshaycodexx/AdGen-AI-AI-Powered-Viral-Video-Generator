@@ -33,7 +33,7 @@ const Generator = () => {
             const userStr = localStorage.getItem('user');
             const userId = userStr ? JSON.parse(userStr).id : null;
 
-            const res = await axios.post('http://localhost:5000/api/gemini/generate', {
+            const res = await axios.post('/gemini/generate', {
                 ...formData,
                 userId
             });

@@ -14,7 +14,7 @@ const Dashboard = () => {
                 if (!userStr) return;
                 const userId = JSON.parse(userStr).id;
 
-                const res = await axios.get(`http://localhost:5000/api/scripts/user/${userId}`);
+                const res = await axios.get(`/scripts/user/${userId}`);
                 setScripts(res.data);
             } catch (error) {
                 console.error(error);
@@ -27,7 +27,7 @@ const Dashboard = () => {
 
     const togglePublic = async (id, currentStatus) => {
         try {
-            await axios.put(`http://localhost:5000/api/scripts/${id}/public`);
+            await axios.put(`/scripts/${id}/public`);
             setScripts(scripts.map(s => s._id === id ? { ...s, isPublic: !currentStatus } : s));
         } catch (error) {
             console.error(error);

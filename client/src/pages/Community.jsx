@@ -10,7 +10,7 @@ const Community = () => {
     useEffect(() => {
         const fetchCommunity = async () => {
             try {
-                const res = await axios.get('http://localhost:5000/api/scripts/community');
+                const res = await axios.get('/scripts/community');
                 setScripts(res.data);
             } catch (error) {
                 console.error(error);
@@ -23,7 +23,7 @@ const Community = () => {
 
     const handleLike = async (id) => {
         try {
-            await axios.put(`http://localhost:5000/api/scripts/${id}/like`);
+            await axios.put(`/scripts/${id}/like`);
             setScripts(scripts.map(s => s._id === id ? { ...s, likes: s.likes + 1 } : s));
         } catch (error) {
             console.error(error);
